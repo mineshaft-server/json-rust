@@ -65,6 +65,12 @@ impl PartialEq for JsonValue {
 
 impl Eq for JsonValue {}
 
+impl Default for JsonValue {
+    fn default() -> Self {
+        return JsonValue::new_object();
+    }
+}
+
 /// Implements formatting
 ///
 /// ```
